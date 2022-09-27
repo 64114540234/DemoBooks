@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddNewBook</servlet-name>
+        <servlet-class>servlet.AddNewBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditNewBook</servlet-name>
+        <servlet-class>servlet.EditNewBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddNewBookServlet</servlet-name>
+        <servlet-class>servlet.AddNewBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>about</servlet-name>
+        <servlet-class>servlet.about</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNewBook</servlet-name>
+        <url-pattern>/AddNewBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditNewBook</servlet-name>
+        <url-pattern>/EditNewBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddNewBookServlet</servlet-name>
+        <url-pattern>/AddNewBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>about</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
